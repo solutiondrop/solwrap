@@ -28,7 +28,8 @@ gulp.task('images', function () {
 // Static Server + watching scss files
 gulp.task('serve', ['sass'], function() {
   browserSync.init({
-    proxy: config.browserSyncProxy
+    proxy: "solkit.dev",
+    host: "localhost"
   })
 
   gulp.watch('assets/sass/**/*.scss', ['sass']);
