@@ -1,0 +1,48 @@
+// This file exists for not only to connect everything at the
+// project level, but for you to import project-level dependencies
+// stored in the marrow folder, but to also create project-level
+// variables.
+
+@import "../../core/config"; // default dependencies
+@import "marrow/mixins";
+// @import "my_folder/_foo.scss"; // import dependencies from a custom folder
+// @import "bourbon"; // install bourbon in this directory and uncomment this line to enable bourbon, for example
+
+// Yep, taken right from bourbon - https://github.com/thoughtbot/bourbon/blob/master/dist/settings/_prefixer.scss
+$prefix-for-webkit:    false !default;
+$prefix-for-mozilla:   false !default;
+$prefix-for-microsoft: false !default;
+$prefix-for-opera:     false !default;
+$prefix-for-spec:      false !default;
+
+// Default overrides for new theme
+$is-fluid: true; // Change to true to enable the fluid grid
+$use-global-border-box: false; // Change to true the enable global border-box
+
+$link-color: #e30613; // default link color
+$link-hover: #e30613; // default link color on :hover
+$link-decoration: none; // default link decoration
+
+$base-width: if($is-fluid, 100%, ($base-col-width + $base-gutter-width) * $base-col-count);
+
+$font-size: 16px;  // default font size. Change here will adjust sizes across the board.
+$font-weight: 400; // sets the font weight
+$font-family: "adobe-caslon-pro", serif; // default fonts
+$font-color: #555;  // default font color
+
+$heading-family: "effra", sans-serif; // default heading (h1-h6) font
+$heading-color: #000; // default heading (h1-h6) color
+$heading-weight: 600; // sets the weight of the heading text
+
+$form-font: $font-family; // default form font
+
+$button-color: #e30613;
+$button-weight: 600;
+$button-font-uppercase: true;
+$button-border-color: #e30613;
+
+// GRID CHANGES
+$grid-max-width: 1170px;
+$base-col-count: 12;
+$base-col-width: 60px;
+$use-new-grid: true;

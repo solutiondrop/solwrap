@@ -2,10 +2,10 @@ name        = SolWrap
 description = A theme based on Radix.
 screenshot  = screenshot.png
 core        = 7.x
+version = "7.x-1.0"
 
 ; Base - Radix
 base theme  = radix
-
 
 ; Regions
 regions[content] = Content
@@ -15,19 +15,11 @@ plugins[panels][layouts] = panels/layouts
 plugins[panels][styles] = panels/styles
 
 ; CSS - General
-stylesheets[all][]     = assets/stylesheets/screen.css
-stylesheets[print][]   = assets/stylesheets/print.css
+stylesheets[all][]     = css/styles.css
 
 ; CSS - Conditional
-stylesheets-conditional[lte IE 9][all][] = assets/stylesheets/ie.css
-stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
+; stylesheets-conditional[lte IE 9][all][] = css/ie.css
+; stylesheets-conditional[IE 8][all][] = css/ie8.css
 
 ; Javascript
-scripts[] = assets/javascripts/script.js
-
-; Information added by Drupal.org packaging script on 2015-07-21
-version = "7.x-3.0-rc3"
-core = "7.x"
-project = "radix"
-datestamp = "1437477544"
-
+scripts[] = js/script.js
