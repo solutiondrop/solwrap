@@ -33,7 +33,7 @@ gulp.task('images', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init(["css/*.css", "js/*.js"], {
-        proxy: "tamarkinauctions.dev", // BrowserSync proxy, change to match your local environment
+        proxy: "solkit.dev", // BrowserSync proxy, change to match your local environment
         host: "localhost"
     });
 });
